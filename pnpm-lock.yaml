@@ -3939,6 +3939,9 @@ importers:
       path-to-regexp:
         specifier: 6.3.0
         version: 6.3.0
+      rosie-skills:
+        specifier: ^0.6.2
+        version: 0.6.2
       unenv:
         specifier: 2.0.0-rc.24
         version: 2.0.0-rc.24
@@ -13534,6 +13537,26 @@ packages:
   rollup@4.57.1:
     resolution: {integrity: sha512-oQL6lgK3e2QZeQ7gcgIkS2YZPg5slw37hYufJ3edKlfQSGGm8ICoxswK15ntSzF/a8+h7ekRy7k7oWc3BQ7y8A==}
     engines: {node: '>=18.0.0', npm: '>=8.0.0'}
+    hasBin: true
+
+  rosie-skills-darwin-arm64@0.6.2:
+    resolution: {integrity: sha512-7lfRxsp6+2G31HMaxxXlyUqYf6QRE+HkIw/Ejir2vIWdbq+/Z8K/wADx8OGWEdc61bv22/83X0bauKhlP5qcZA==}
+    cpu: [arm64]
+    os: [darwin]
+
+  rosie-skills-freebsd-x64@0.6.2:
+    resolution: {integrity: sha512-XMi9EgL5763otWFwihyZanExcuk4EycdnWpVa8WI0LxMegygao8ET6UO+Lp7O1Pf7t+1Qb9uTwQpZtr0HmNnqg==}
+    cpu: [x64]
+    os: [freebsd]
+
+  rosie-skills-linux-x64@0.6.2:
+    resolution: {integrity: sha512-BXf8p+yUMlEM/e7vpig04dbi/l5sYmueklG8vkfLzUtc3Rw1vB1TqjjSPkvAMsOGDMLgn7DLnndcPbdsPxNjMQ==}
+    cpu: [x64]
+    os: [linux]
+
+  rosie-skills@0.6.2:
+    resolution: {integrity: sha512-W80ywilE2Mqh4t7Omew1LxTQoff07o7ssAHF/3fWZuQo/4qwCETgbZsZePQQVugKBxyETQeX1TUsptm/hpfRlQ==}
+    engines: {node: '>=18'}
     hasBin: true
 
   rou3@0.7.12:
@@ -24825,6 +24848,21 @@ snapshots:
       '@rollup/rollup-win32-x64-gnu': 4.57.1
       '@rollup/rollup-win32-x64-msvc': 4.57.1
       fsevents: 2.3.3
+
+  rosie-skills-darwin-arm64@0.6.2:
+    optional: true
+
+  rosie-skills-freebsd-x64@0.6.2:
+    optional: true
+
+  rosie-skills-linux-x64@0.6.2:
+    optional: true
+
+  rosie-skills@0.6.2:
+    optionalDependencies:
+      rosie-skills-darwin-arm64: 0.6.2
+      rosie-skills-freebsd-x64: 0.6.2
+      rosie-skills-linux-x64: 0.6.2
 
   rou3@0.7.12: {}
 
