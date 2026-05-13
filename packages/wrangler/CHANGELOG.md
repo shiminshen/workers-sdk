@@ -1,5 +1,28 @@
 # wrangler
 
+## 4.90.2
+
+### Patch Changes
+
+- [#13894](https://github.com/cloudflare/workers-sdk/pull/13894) [`58b4403`](https://github.com/cloudflare/workers-sdk/commit/58b44035e2c2e1b9339bd2b798c5de5dc8bff7b9) Thanks [@dependabot](https://github.com/apps/dependabot)! - Update dependencies of "miniflare", "wrangler"
+
+  The following dependency versions have been updated:
+
+  | Dependency | From         | To           |
+  | ---------- | ------------ | ------------ |
+  | workerd    | 1.20260508.1 | 1.20260511.1 |
+
+- [#13780](https://github.com/cloudflare/workers-sdk/pull/13780) [`4352f87`](https://github.com/cloudflare/workers-sdk/commit/4352f87afe0c14174c14a49e6c4f6102354faed7) Thanks [@matingathani](https://github.com/matingathani)! - Normalize legacy instance type aliases (`standard` → `standard-1`, `dev` → `lite`) to prevent phantom EDIT diffs on every deploy
+
+- [#13750](https://github.com/cloudflare/workers-sdk/pull/13750) [`da664d5`](https://github.com/cloudflare/workers-sdk/commit/da664d59131a4abe4abb370cefc244d7d1c5f491) Thanks [@matingathani](https://github.com/matingathani)! - fix: automatically delete log files older than 30 days and add WRANGLER_WRITE_LOGS=false to disable disk logging
+
+  Wrangler previously accumulated log files in `~/.wrangler/logs/` indefinitely, causing some users to accumulate gigabytes of logs over time.
+
+  Log files older than 30 days are now automatically cleaned up on the first log write. Disk logging can be disabled entirely by setting `WRANGLER_WRITE_LOGS=false`.
+
+- Updated dependencies [[`58b4403`](https://github.com/cloudflare/workers-sdk/commit/58b44035e2c2e1b9339bd2b798c5de5dc8bff7b9)]:
+  - miniflare@4.20260511.0
+
 ## 4.90.1
 
 ### Patch Changes
